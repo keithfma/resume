@@ -158,12 +158,12 @@
   {%
     \color{%
       \ifcase\value{colorCounter}%
-        awesome\or%
-        awesome\or%
-        awesome\or%
-        awesome\or%
-        awesome\else%
-        awesome\fi%
+        black\or%
+        black\or%
+        black\or%
+        black\or%
+        black\else%
+        black\fi%
     } #1#2#3%
   }%
   \stepcounter{colorCounter}%
