@@ -1,0 +1,132 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[11pt, letter]{awesome-cv}
+\fontdir[fonts/] % override a directory location for fonts(default: 'fonts/')
+\newcommand*{\sectiondir}{resume/} % Configure a directory location for sections
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+
+\usepackage{import} % Needed to divide into several files
+
+
+% Header --------------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{center}
+\headerlastnamestyle{Keith F. Ma}
+
+\vspace{0.4mm}
+
+\headeraddressstyle{Cambridge MA}
+\quad\textbar\quad
+\headeraddressstyle{610-389-1406}
+\quad\textbar\quad
+\headeraddressstyle{keithfma@gmail.com}
+
+\headeraddressstyle{\href{http://github.com/keithfma}{github.com/keithfma}}
+\quad\textbar\quad
+\headeraddressstyle{\href{http://linkedin.com/in/keithfma}{linkedin.com/in/keithfma}}
+
+\end{center}
+  
+% body -------------------------------------------------------------------------------------------------
+
+\cvsection{Skills}
+\begin{cvskills}
+\cvskill{Languages}{Python, MATLAB, C, C++, Fortran, SQL, Javascript, Bash}
+\cvskill{Packages}{scipy/numpy, sklearn. gensim, scrapy, flask, OpenMP, OpenMPI, Sun Grid Engine}
+\cvskill{Tools}{Elasticsearch, MongoDB, OrientDB, GDAL, PDAL, QGis}
+\end{cvskills}
+
+
+\cvsection{Experience}
+\begin{cventries}
+  \cventry
+    {Insight Data Science}
+    {Fellow}
+    {Boston, MA}
+    {June 2018 - Present}
+    {
+    \begin{cvitems}
+      \item{My project.}
+    \end{cvitems}
+    }
+  \cventry
+    {Research Scientist}
+    {Boston Fusion Corp}
+    {Lexington, MA}
+    {June 2016 - May 2018}
+    {
+      \begin{cvitems}
+        \item {Design and implement practical analytical tools that leverage machine learning to address a wide range of Department of Defense needs for DARPA, ONR, etc. Projects include adaptive decision support systems (PI, two projects), data exploration via multi-level graphs (software lead), gaming environment artificial intelligence (software lead), and statistical modeling for missile detection (technical contributor)}
+        \item {Modernized internal software engineering practices, including wrapping new capabilities as services with REST APIs, standardized packaging, sensible unit testing, and automatic documentation generation.}
+        \item {Present scientific results and software demonstrations to diverse commercial and military clients and stakeholders, and manage partnerships with commercial and academic collaborators.}
+      \end{cvitems}
+    }
+  \cventry
+    {Scientific Programmer / Analyst}
+    {Boston University Research Computing Services}
+    {Boston, MA}
+    {Sept. 2014 - June 2016}
+    {
+      \begin{cvitems}
+        \item {Designed, optimized, and parallelized research software and computational workflows to support projects in many disciplines. Leveraged HPC clusters to enable analysis of larger datasets and more complex simulations.}
+        \item {Promoted best practices in scientific computing by organizing and teaching tutorials and workshops. Led the expansion of offerings through new partnerships with Software Carpentry, XSEDE, and Mozilla Science Lab.}
+      \end{cvitems}
+    }
+  \cventry
+    {Doctoral Candidate}
+    {Yale University Department of Geology \& Geophysics}
+    {New Haven, CT}
+    {Sept. 2007 - Present}
+    {
+      \begin{cvitems}
+        \item {Designed and programmed a new numerical model of river, glacier and hillslope processes that significantly improved the accuracy, stability, functionality, and speed of earlier models.}
+        \item {Created a novel method for reconstructing topography and verified against numerical simulations}
+        \item{Developed custom software for instrument control, automated image processing, and measurement of velocity fields for a world-class “sandbox” analog model of crustal deformation which I designed and built.}
+      \end{cvitems} 
+    }
+  \cventry
+    {Teaching Fellow}
+    {Tunghai University / Princeton-in-Asia}
+    {Taichung, Taiwan}
+    {Aug. 2005 - May 2007}
+    {
+      \begin{cvitems}
+        \item {Add one bullet}
+      \end{cvitems} 
+    }
+\end{cventries}
+
+\cvsection{Education}
+\begin{cventries}
+  \cventry
+    {PhD in Geology \& Geophysics}
+    {Yale University}
+    {New Haven, CT}
+    {Expected Fall 2018}
+    {Dissertation: The Impact of Glaciers on Mountain Topography in Patagonia Over the Past 10 Million Years}
+  \cventry
+    {BA in Geology - Biology}
+    {Brown University}
+    {Providence RI}
+    {May, 2005}
+    {}
+\end{cventries}
+
+\end{document}
