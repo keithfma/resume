@@ -66,10 +66,10 @@
     {Jan. 2019 - March 2023}  % previous title dates
     {
     \begin{cvitems}
-      \item Co-leading the development of a multi-model quantification service that provides a complete accounting of CO\textsubscript{2} per bushel harvested, capable of modeling 10,000s of fields in parallel for production and experimentation use cases
-      \item Lead engineer for life-cycle analysis (LCA) model that estimates emissions from farming events, including a novel preprocessing method for Monte Carlo uncertainty estimation ~100x faster than leading LCA tools
-      \item Lead engineer for “gapfilling” service that reduces customer data entry burden by populating missing/invalid farming events automatically using the best-available reference data (e.g., surveys, ML predictions, etc.)
-      \item Designed and implemented tools for visualization and analysis of medium resolution satellite imagery (~20m/pixel), including an on-demand image tiling service providing fast (~100ms response time), interactive visualization of the latest imagery covering multiple continents
+      \item Lead engineer for synthetic farm event generation service, which constructs realistic agricultural histories for fields anywhere in the US. Applications include reducing customer data-entry burden without reducing carbon modeling accuracy, computing emissions for regional “supply sheds”, and supporting in-house research.
+      \item Lead engineer for automated life-cycle-analysis (LCA) model that computes direct and indirect CO\textsubscript{2}-equivalent emissions per bushel grain harvested at the individual field level from farmer practice data – a critical component of Indigo’s carbon inventory products. Includes a novel pre-processing method for Monte Carlo uncertainty estimation that is ~100x faster than leading LCA tools.
+      \item Core developer for soil carbon quantification system that estimates soil organic carbon as a function of farmer practices, weather, etc., for ~5.5M acres in the US, leading to >130k tons CO\textsubscript{2} sequestered so far. Responsible for automated data validation and remediation service that integrates the best available in-house and public reference data (e.g., ML inferences from satellite observations, USDA statistical reports, etc.) to flag data quality issues and resolve them automatically. 
+      \item Designed and implemented tools for satellite imagery visualization and analysis, including a dynamic (on-demand) image tiling service for interactive visualization of the latest 20m/pixel resolution imagery in Indigo’s web applications with a 100ms response time.
       \item Build team performance and cohesion by mentoring junior engineers, sharing knowledge with peers, and collaborating with product and science on requirements, milestones, and prioritization
     \end{cvitems}
     }
