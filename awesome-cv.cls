@@ -542,7 +542,7 @@
   \end{center}
 }
 % Define an entry of cv information
-% Usage: \cventry{<position>}{<title>}{<location>}{<date>}{<description>}
+% Usage: \cventry{<position>}{<organization>}{<location>}{<date>}{<description>}
 \newcommand*{\cventry}[5]{
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
@@ -554,6 +554,37 @@
     \multicolumn{2}{L{16.5cm}}{\descriptionstyle{#5}} \\
   \end{tabular*}
 }
+
+% Define an entry of cv information with tight vertical spacing
+% Usage: \cventry{<position>}{<organization>}{<location>}{<date>}{<description>}
+% NOTE: this is *not* part of the awesome-cv distribution, but rather a custom add-on by Keith Ma
+\newcommand*{\cventrytight}[5]{
+  \vspace{-2.0mm}  % NOTE: added to reduce space between sections
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{12.5cm} R{4.0cm}}
+    \ifempty{#2#3}
+      {\entrypositionstyle{#1} & \entrydatestyle{#4} \\}
+      {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
+      \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
+    \multicolumn{2}{L{16.5cm}}{\descriptionstyle{#5}} \\
+  \end{tabular*}
+}
+
+% Define an entry for multiple roles at the same organization
+% Usage: \cventrydouble{<organization>}{<location>}{<position1>}{<date1>}{<position2>}{<date2>}{<description>}
+% NOTE: this is *not* part of the awesome-cv distribution, but rather a custom add-on by Keith Ma
+\newcommand*{\cventrydouble}[7]{
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{12.5cm} R{4.0cm}}
+      \entrytitlestyle{#1} & \entrylocationstyle{#2} \\
+      \entrypositionstyle{#3} & \entrydatestyle{#4} \\
+      \entrypositionstyle{#5} & \entrydatestyle{#6} \\
+    \multicolumn{2}{L{16.5cm}}{\descriptionstyle{#7}} \\
+  \end{tabular*}
+}
+
 
 % Define an environment for cvsubentry
 \newenvironment{cvsubentries}{

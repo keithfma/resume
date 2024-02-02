@@ -1,3 +1,6 @@
 
-test:
-	cd examples/ ; for f in *.tex; do xelatex $$f; done
+build/resume.pdf: resume.tex
+	xelatex --output-directory=build resume.tex
+
+clean:
+	rm build/*
