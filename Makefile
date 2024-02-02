@@ -1,5 +1,5 @@
 
-build/resume.pdf: resume.tex
+build/resume.pdf: resume.tex awesome-cv.cls
 	xelatex --output-directory=build resume.tex
 
 clean:

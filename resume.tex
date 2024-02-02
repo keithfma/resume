@@ -2,7 +2,7 @@
 %!TEX encoding = UTF-8 Unicode
 \documentclass[11pt, a4paper]{awesome-cv}
 \fontdir[fonts/] % override a directory location for fonts(default: 'fonts/')
-\newcommand*{\sectiondir}{resume/} % Configure a directory location for sections
+% \newcommand*{\sectiondir}{resume/} % Configure a directory location for sections
 
 %%% Override color
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
@@ -22,7 +22,7 @@
 %%% Override a separator for social informations in header(default: ' | ')
 %\headersocialsep[\quad\textbar\quad]
 
-\usepackage{import} % Needed to divide into several files
+%\usepackage{import} % Needed to divide into several files
 
 
 % Header --------------------------------------------------------------------------------------------
@@ -63,14 +63,14 @@
     {Staff Software Engineer}  % most recent title
     {March 2023 - Present}  % most recent dates
     {Senior Software Engineer}  % previous title
-    {January 2019 - March 2023}  % previous title dates
+    {Jan. 2019 - March 2023}  % previous title dates
     {
     \begin{cvitems}
-      \item Building a multi-model quantification suite for a complete accounting of CO\textsubscript{2} emissions per bushel harvested.  
-      \item Led development of new life-cycle emissions model designed to be lightweight (no special infrastructure), fast (<1s per farm), maintainable (easy reference data updates), and scientist-friendly (detailed human-readable results). 
-      \item Lead engineer for “gapfilling” service to populate missing/invalid farm management data in accordance an externally-verified carbon credit generation protocol. Integrates a wide range of data sources (e.g., surveys, ML predictions, etc.) to reduce customer data entry burden.
-      \item Designed and implemented tools for visualization and analysis of medium resolution satellite imagery (~20m/pixel), including an on-demand image tiling service for interactive image layers with adjustable styling covering multiple continents.
-      \item Support team performance and cohesion by mentoring junior engineers, sharing knowledge with peers, and working with product management to build and refine requirements, set milestones, and prioritize tasks to meet them.
+      \item Co-leading the development of a multi-model quantification service that provides a complete accounting of CO\textsubscript{2} per bushel harvested, capable of modeling 10,000s of fields in parallel for production and experimentation use cases
+      \item Lead engineer for life-cycle analysis (LCA) model that estimates emissions from farming events, including a novel preprocessing method for Monte Carlo uncertainty estimation ~100x faster than leading LCA tools
+      \item Lead engineer for “gapfilling” service that reduces customer data entry burden by populating missing/invalid farming events automatically using the best-available reference data (e.g., surveys, ML predictions, etc.)
+      \item Designed and implemented tools for visualization and analysis of medium resolution satellite imagery (~20m/pixel), including an on-demand image tiling service providing fast (~100ms response time), interactive visualization of the latest imagery covering multiple continents
+      \item Build team performance and cohesion by mentoring junior engineers, sharing knowledge with peers, and collaborating with product and science on requirements, milestones, and prioritization
     \end{cvitems}
     }
 
@@ -78,10 +78,10 @@
     {Software Engineer}
     {TellusLabs (acquired by Indigo Ag)}
     {Somerville, MA}
-    {August 2018 - January 2019}
+    {Aug. 2018 - Jan. 2019}
     {
     \begin{cvitems}
-      \item Core developer for global satellite analytics platform focused on monitoring and predicting agricultural yields
+      \item Core developer for a global satellite analytics platform focused on monitoring and predicting agricultural yields
     \end{cvitems}
     }
 
@@ -92,7 +92,7 @@
     {June 2018 - Present}
     {
     \begin{cvitems}
-      \item Built an MVP navigation app that optimizes for comfortable outdoor travel by simulating sunlight along potential routes from dense LiDAR points and the OpenStreetMap graph.
+      \item Built an MVP navigation app that optimizes for comfortable outdoor travel by simulating sunlight along potential routes from dense LiDAR points and the OpenStreetMap graph
     \end{cvitems}
     }
 
@@ -103,7 +103,7 @@
     {June 2016 - May 2018}
     {
       \begin{cvitems}
-        \item {Created analytical tools leveraging ML to address a wide range of Department of Defense needs. Projects included adaptive decision support systems, data exploration via multi-level graphs, and gaming artificial intelligence.}
+        \item {Created analytical tools leveraging ML to address a wide range of Department of Defense needs, including adaptive decision support systems, data exploration via multi-level graphs, and gaming artificial intelligence}
       \end{cvitems}
     }
 
@@ -114,7 +114,7 @@
     {Sept. 2014 - June 2016}
     {
       \begin{cvitems}
-        \item {Consulted with BU faculty and students to design, optimize, and parallelize research software for HPC clusters.} 
+        \item {Consulted with BU faculty and students to design, optimize, and parallelize research software for HPC clusters} 
       \end{cvitems}
     }
 
@@ -125,9 +125,9 @@
     {Sept. 2007 - Sept. 2014}
     {
       \begin{cvitems}
-        \item {Designed and built a distributed numerical model to simulate erosion by rivers and glaciers.}
-        \item {Created a method for reconstructing past topography by decomposing and scaling modern topographic features.}
-        \item {Built an analog model of mountain formation and developed software for instrument control and measuring velocity fields from experiment imagery.}
+        \item {Designed and built a distributed numerical model to simulate erosion by rivers and glaciers}
+        \item {Created a method for reconstructing past topography by decomposing and scaling modern topographic features}
+        \item {Built an analog model of mountain formation and developed software for instrument control and measuring velocity fields from experiment imagery}
       \end{cvitems} 
     }
 
@@ -139,13 +139,13 @@
     {M.Phil in Geology \& Geophysics}
     {Yale University}
     {New Haven, CT}
-    {December, 2009}
+    {Dec. 2009}
     {}
   \cventry
     {BA in Geology - Biology}
     {Brown University}
     {Providence RI}
-    {May, 2005}
+    {May 2005}
     {}
 \end{cventries}
 
