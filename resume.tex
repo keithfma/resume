@@ -2,7 +2,7 @@
 %!TEX encoding = UTF-8 Unicode
 \documentclass[11pt, a4paper]{awesome-cv}
 \fontdir[fonts/] % override a directory location for fonts(default: 'fonts/')
-\newcommand*{\sectiondir}{resume/} % Configure a directory location for sections
+% \newcommand*{\sectiondir}{resume/} % Configure a directory location for sections
 
 %%% Override color
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
@@ -22,7 +22,7 @@
 %%% Override a separator for social informations in header(default: ' | ')
 %\headersocialsep[\quad\textbar\quad]
 
-\usepackage{import} % Needed to divide into several files
+%\usepackage{import} % Needed to divide into several files
 
 
 % Header --------------------------------------------------------------------------------------------
@@ -43,6 +43,8 @@
 \enskip\textbar\enskip
 \headeraddressstyle{\href{http://linkedin.com/in/keithfma}{linkedin.com/in/keithfma}}
 
+\descriptionstyle{Software engineer with 10 years experience translating cutting-edge research into practical software and a strong background in science and ML. Looking to build tools that make hard tasks easy and the world a better place.}
+
 
 \end{center}
   
@@ -51,7 +53,7 @@
 \cvsection{Skills}
 \begin{cvskills}
 \cvskill{Languages}{Python, Javascript, MATLAB, C, Fortran, Shell, SQL}
-\cvskill{Tools}{AWS, Airflow, Postgis, Docker, GDAL/OGR, scipy, SQLAlchemy, celery, flask, pytest}
+\cvskill{Tools}{AWS, Airflow, PostGIS, Docker, CircleCI, GDAL/OGR, scipy, SQLAlchemy, celery, flask}
 \end{cvskills}
 
 \cvsection{Experience}
@@ -63,14 +65,13 @@
     {Staff Software Engineer}  % most recent title
     {March 2023 - Present}  % most recent dates
     {Senior Software Engineer}  % previous title
-    {January 2019 - March 2023}  % previous title dates
+    {Jan. 2019 - March 2023}  % previous title dates
     {
     \begin{cvitems}
-      \item Building a multi-model quantification suite for a complete accounting of CO\textsubscript{2} emissions per bushel harvested.  
-      \item Led development of new life-cycle emissions model designed to be lightweight (no special infrastructure), fast (<1s per farm), maintainable (easy reference data updates), and scientist-friendly (detailed human-readable results). 
-      \item Lead engineer for “gapfilling” service to populate missing/invalid farm management data in accordance an externally-verified carbon credit generation protocol. Integrates a wide range of data sources (e.g., surveys, ML predictions, etc.) to reduce customer data entry burden.
-      \item Designed and implemented tools for visualization and analysis of medium resolution satellite imagery (~20m/pixel), including an on-demand image tiling service for interactive image layers with adjustable styling covering multiple continents.
-      \item Support team performance and cohesion by mentoring junior engineers, sharing knowledge with peers, and working with product management to build and refine requirements, set milestones, and prioritize tasks to meet them.
+      \item Lead engineer for life-cycle analysis model (LCA) of agricultural CO\textsubscript{2} emissions that automates this labor-intensive task so it can be done at scale (<<1s per harvest, >50k harvests). Includes a novel method for LCA model uncertainty, currently in the patent application process. 
+      \item Core developer for soil carbon quantification system that estimates soil organic carbon over time for >10k fields in the US, leading to >130k tons CO\textsubscript{2} sequestered so far. Responsible for data remediation service that integrates ML inferences, statistical reports, and subject matter expertise to identify missing/erroneous data and patch it with scientifically-defensible synthetic data. Designed and tested in collaboration with science and policy teams.
+      \item Built tools for satellite imagery visualization and analysis, including an on-demand image tiling service for interactive visualization of the latest 20m/pixel resolution imagery in Indigo’s web applications with a 100ms response time.
+      \item Improved team performance and built internal alignment by mentoring junior engineers, sharing knowledge with peers, and collaborating with science and product teams on requirements, milestones, and prioritization.
     \end{cvitems}
     }
 
@@ -78,10 +79,10 @@
     {Software Engineer}
     {TellusLabs (acquired by Indigo Ag)}
     {Somerville, MA}
-    {August 2018 - January 2019}
+    {Aug. 2018 - Jan. 2019}
     {
     \begin{cvitems}
-      \item Core developer for global satellite analytics platform focused on monitoring and predicting agricultural yields
+      \item Core developer for a global satellite analytics platform predicting agricultural yields from field- to national-scale
     \end{cvitems}
     }
 
@@ -92,7 +93,7 @@
     {June 2018 - Present}
     {
     \begin{cvitems}
-      \item Built an MVP navigation app that optimizes for comfortable outdoor travel by simulating sunlight along potential routes from dense LiDAR points and the OpenStreetMap graph.
+      \item Built an MVP navigation webapp that optimizes for comfortable outdoor travel by simulating sunlight and shade along potential routes from dense LiDAR points and the OpenStreetMap graph
     \end{cvitems}
     }
 
@@ -103,7 +104,7 @@
     {June 2016 - May 2018}
     {
       \begin{cvitems}
-        \item {Created analytical tools leveraging ML to address a wide range of Department of Defense needs. Projects included adaptive decision support systems, data exploration via multi-level graphs, and gaming artificial intelligence.}
+        \item Created ML-based analytical tools to address a wide range of Department of Defense needs, including adaptive decision support systems, data exploration via multi-level graphs, and gaming artificial intelligence
       \end{cvitems}
     }
 
@@ -114,7 +115,7 @@
     {Sept. 2014 - June 2016}
     {
       \begin{cvitems}
-        \item {Consulted with BU faculty and students to design, optimize, and parallelize research software for HPC clusters.} 
+        \item {Consulted with BU faculty and students to design, optimize, and parallelize research software for HPC clusters} 
       \end{cvitems}
     }
 
@@ -125,9 +126,9 @@
     {Sept. 2007 - Sept. 2014}
     {
       \begin{cvitems}
-        \item {Designed and built a distributed numerical model to simulate erosion by rivers and glaciers.}
-        \item {Created a method for reconstructing past topography by decomposing and scaling modern topographic features.}
-        \item {Built an analog model of mountain formation and developed software for instrument control and measuring velocity fields from experiment imagery.}
+        \item {Designed and built a distributed numerical model to simulate erosion by rivers and glaciers}
+        \item {Created a method for reconstructing past topography by decomposing and scaling modern topographic features}
+        \item {Built an analog model of mountain formation and software for measuring velocity fields from experiment imagery}
       \end{cvitems} 
     }
 
@@ -139,13 +140,13 @@
     {M.Phil in Geology \& Geophysics}
     {Yale University}
     {New Haven, CT}
-    {December, 2009}
+    {Dec. 2009}
     {}
   \cventry
     {BA in Geology - Biology}
     {Brown University}
     {Providence RI}
-    {May, 2005}
+    {May 2005}
     {}
 \end{cventries}
 
