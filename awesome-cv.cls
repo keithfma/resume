@@ -521,6 +521,15 @@
   } 
 }
 
+
+% Define a nicely-formatted hyperlink
+% NOTE: this is *not* part of the awesome-cv distribution, but rather a custom add-on by Keith Ma
+\definecolor{LinkColor}{RGB}{0, 0, 153}
+\newcommand{\link}[2]{
+  \href{#1}{\color{LinkColor}{#2}}
+}
+
+
 % Define a section for CV
 % Usage: \cvsection{<section-title>}
 \newcommand{\cvsection}[1]{
@@ -562,7 +571,7 @@
 % Usage: \cventry{<position>}{<organization>}{<location>}{<date>}{<description>}
 % NOTE: this is *not* part of the awesome-cv distribution, but rather a custom add-on by Keith Ma
 \newcommand*{\cventrytight}[5]{
-  \vspace{-2.0mm}  % NOTE: added to reduce space between sections
+  \vspace{-1.0mm}  % NOTE: added to reduce space between sections
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{12.5cm} R{4.0cm}}
@@ -575,16 +584,18 @@
 }
 
 % Define an entry for multiple roles at the same organization
-% Usage: \cventrydouble{<organization>}{<location>}{<position1>}{<date1>}{<position2>}{<date2>}{<description>}
+% Usage: \cventrydouble{<organization>}{<location>}{<position1>}{<date1>}{description1}{<position2>}{<date2>}{<description>}
 % NOTE: this is *not* part of the awesome-cv distribution, but rather a custom add-on by Keith Ma
-\newcommand*{\cventrydouble}[7]{
+\newcommand*{\cventrydouble}[8]{
+  \vspace{-1.0mm}  % NOTE: added to reduce space between sections
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{12.5cm} R{4.0cm}}
       \entrytitlestyle{#1} & \entrylocationstyle{#2} \\
       \entrypositionstyle{#3} & \entrydatestyle{#4} \\
-      \entrypositionstyle{#5} & \entrydatestyle{#6} \\
-    \multicolumn{2}{L{16.5cm}}{\descriptionstyle{#7}} \\
+    \multicolumn{2}{L{16.5cm}}{\descriptionstyle{#5}} \\
+      \entrypositionstyle{#6} & \entrydatestyle{#7} \\
+    \multicolumn{2}{L{16.5cm}}{\descriptionstyle{#8}} \\
   \end{tabular*}
 }
 
