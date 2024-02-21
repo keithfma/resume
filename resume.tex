@@ -57,7 +57,7 @@
 
 \cvsection{Skills}
 \begin{cvskills}
-\cvskill{Languages}{Python, Javascript, MATLAB, C, Fortran, Shell, SQL}
+\cvskill{Languages}{Python, Javascript,C, Fortran, Shell, SQL, MATLAB}
 \cvskill{Tools}{AWS, Airflow, PostGIS, Docker, CircleCI, GDAL/OGR, scipy, SQLAlchemy, celery, flask}
 \end{cvskills}
 
@@ -67,13 +67,6 @@
 
 % TODO: Always start with a verb, so as not to annoy pedants
 
-% TODO: Split bullets between staff and senior, it is confusing readers this way
-
-% TODO: Link to patent(s)
-% https://patents.google.com/patent/US20240020775A1
-% https://patents.google.com/patent/US20220180526A1
-% https://patents.google.com/patent/US20230092057A1
-
 
   \cventrydouble
     {Indigo Ag}  % org
@@ -82,7 +75,10 @@
     {March 2023 - Present}  % most recent dates
     {
     \begin{cvitems}
-      \item Lead engineer for life-cycle analysis model (LCA) of agricultural CO\textsubscript{2} emissions that automates this labor-intensive task so it can be done at scale (<<1s per harvest, >50k harvests). Includes a novel method for LCA model uncertainty, currently in the patent application process. 
+      % TODO: Aaron had some thoughts about this bullet, double check them
+      % TODO: I don't love the "this labor intensive task" phrase anymore, since it is not clear what the "task' is/
+      % TODO: Better (re)quantify the speed increase, or drop it.
+      \item Led development of a life-cycle analysis model (LCA) of agricultural CO\textsubscript{2} emissions that automates this labor-intensive task so it can be done at scale. Includes a novel method for preprocessing model uncertainty to accelerate runtime performance (X s to X ms), currently in the patent application process. 
       \item Improved team performance and built internal alignment by mentoring junior engineers, sharing knowledge with peers, and collaborating with science and product teams on requirements, milestones, and prioritization.
     \end{cvitems}
     }
@@ -90,8 +86,8 @@
     {Jan. 2019 - March 2023}  % previous title dates
     {
     \begin{cvitems}
-      \item Core developer for soil carbon quantification system that estimates soil organic carbon over time for >10k fields in the US, leading to >130k tons CO\textsubscript{2} sequestered so far. Responsible for data remediation service that integrates ML inferences, statistical reports, and subject matter expertise to identify missing/erroneous data and patch it with scientifically-defensible synthetic data. Designed and tested in collaboration with science and policy teams.
-      \item Built tools for satellite imagery visualization and analysis, including an on-demand image tiling service for interactive visualization of the latest 20m/pixel resolution imagery in Indigo’s web applications with a 100ms response time.
+      \item Developed data remediation service for a system that estimates soil organic carbon over time for >10k fields in the US, leading to >130k tons CO\textsubscript{2} sequestered so far \link{https://patents.google.com/patent/US20240020775A1}{(patent)}. Integrates ML inferences, statistical reports, and subject matter expertise to identify missing/erroneous data and patch it with scientifically-defensible synthetic data. Designed and tested in collaboration with science and policy teams.
+      \item Built tools for satellite imagery visualization and analysis, including field boundary detection \link{https://patents.google.com/patent/US20220180526A1}{(patent)} and an on-demand image tiling service for interactive visualization of the latest 20m/pixel resolution imagery in Indigo’s web applications with a 100ms response time \link{https://patents.google.com/patent/US20230092057A1}{(patent)}.
     \end{cvitems}
     }
 
@@ -107,7 +103,6 @@
     }
 
     % TODO: Remove link to dead webapp
-    % TODO: Style link so it can be seen / noticed by readers
 
   \cventrytight
     {Data Science Fellow}
@@ -116,7 +111,7 @@
     {June 2018 - Present}
     {
     \begin{cvitems}
-      \item Built an \href{https://www.allnans.com/jekyll/update/2018/08/07/introducing-parasol.html}{MVP navigation webapp} that optimizes for comfortable outdoor travel by simulating sunlight and shade along potential routes from dense LiDAR points and the OpenStreetMap graph
+      \item Built an MVP \link{https://www.allnans.com/jekyll/update/2018/08/07/introducing-parasol.html}{navigation app} that optimizes for comfortable outdoor travel in sun or shade by simulating sunlight along potential routes from dense LiDAR points and the OpenStreetMap graph
     \end{cvitems}
     }
 
@@ -157,7 +152,7 @@
 
 \end{cventries}
 
-% TODO: make the education section tighter
+% TODO: make the education section tighter / keep it on the same page
 
 \cvsection{Education}
 \begin{cventries}
