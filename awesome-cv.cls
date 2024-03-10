@@ -238,8 +238,6 @@
 %-------------------------------------------------------------------------------
 % Configure styles for each CV elements
 % For fundamental structures
-% \newcommand*{\headerfirstnamestyle}[1]{{\fontsize{32pt}{1em}\headerfontlight\color{black} #1}}
-% \newcommand*{\headerlastnamestyle}[1]{{\fontsize{32pt}{1em}\headerfont\bfseries\color{black} #1}}
 \newcommand*{\headerfirstnamestyle}[1]{{\fontsize{26pt}{1em}\headerfontlight\color{black} #1}}
 \newcommand*{\headerlastnamestyle}[1]{{\fontsize{26pt}{1em}\headerfont\bfseries\color{black} #1}}
 \newcommand*{\headerpositionstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\scshape\color{black} #1}}
@@ -247,7 +245,6 @@
 \newcommand*{\headersocialstyle}[1]{{\fontsize{9pt}{1em}\headerfont\color{black} #1}}
 \newcommand*{\headerquotestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\itshape\color{black} #1}}
 \newcommand*{\footerstyle}[1]{{\fontsize{10pt}{1em}\footerfont\scshape\color{black} #1}}
-%\newcommand*{\sectionstyle}[1]{{\fontsize{16pt}{1em}\bodyfont\bfseries\color{black}\@sectioncolor #1}}
 \newcommand*{\sectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{black}\@sectioncolor #1}}
 \newcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\scshape\textcolor{black}{#1}}}
 
@@ -586,21 +583,6 @@
   \end{tabular*}
 }
 
-% Define an entry of cv information with tight vertical spacing
-% Usage: \cventry{<position>}{<organization>}{<location>}{<date>}{<description>}
-% NOTE: this is *not* part of the awesome-cv distribution, but rather a custom add-on by Keith Ma
-\newcommand*{\cventrytighter}[5]{
-  \vspace{-2.0mm}  % NOTE: added to reduce space between sections
-  \setlength\tabcolsep{0pt}
-  \setlength{\extrarowheight}{0pt}
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{12.5cm} R{4.0cm}}
-    \ifempty{#2#3}
-      {\entrypositionstyle{#1} & \entrydatestyle{#4} \\}
-      {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
-      \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
-    \multicolumn{2}{L{16.5cm}}{\descriptionstyle{#5}} \\
-  \end{tabular*}
-}
 
 % Define an entry for multiple roles at the same organization
 % Usage: \cventrydouble{<organization>}{<location>}{<position1>}{<date1>}{description1}{<position2>}{<date2>}{<description>}
