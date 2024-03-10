@@ -52,7 +52,7 @@
 
 \cvsection{Skills}
 \begin{cvskills}
-\cvskill{Languages}{Python, Javascript, MATLAB, C, Fortran, Shell, SQL}
+\cvskill{Languages}{Python, Javascript,C, Fortran, Shell, SQL, MATLAB}
 \cvskill{Tools}{AWS, Airflow, PostGIS, Docker, CircleCI, GDAL/OGR, scipy, SQLAlchemy, celery, flask}
 \end{cvskills}
 
@@ -64,14 +64,18 @@
     {Boston, MA}  % location 
     {Staff Software Engineer}  % most recent title
     {March 2023 - Present}  % most recent dates
+    {
+    \begin{cvitems}
+      \item Led engineering for life cycle analysis library that applies input-output modeling to estimate cash crop CO\textsubscript{2} emissions from farmer actions and materials used. Includes a novel method for preprocessing model uncertainty that is currently in the patent application process.
+      \item Improved team performance and built internal alignment by mentoring junior engineers, sharing knowledge with peers, and collaborating with science and product teams on requirements, milestones, and prioritization.
+    \end{cvitems}
+    }
     {Senior Software Engineer}  % previous title
     {Jan. 2019 - March 2023}  % previous title dates
     {
     \begin{cvitems}
-      \item Lead engineer for life-cycle analysis model (LCA) of agricultural CO\textsubscript{2} emissions that automates this labor-intensive task so it can be done at scale (<<1s per harvest, >50k harvests). Includes a novel method for LCA model uncertainty, currently in the patent application process. 
-      \item Core developer for soil carbon quantification system that estimates soil organic carbon over time for >10k fields in the US, leading to >130k tons CO\textsubscript{2} sequestered so far. Responsible for data remediation service that integrates ML inferences, statistical reports, and subject matter expertise to identify missing/erroneous data and patch it with scientifically-defensible synthetic data. Designed and tested in collaboration with science and policy teams.
-      \item Built tools for satellite imagery visualization and analysis, including an on-demand image tiling service for interactive visualization of the latest 20m/pixel resolution imagery in Indigo’s web applications with a 100ms response time.
-      \item Improved team performance and built internal alignment by mentoring junior engineers, sharing knowledge with peers, and collaborating with science and product teams on requirements, milestones, and prioritization.
+      \item Developed data remediation service for a system that estimates soil organic carbon over time for >10k fields in the US, leading to >130k tons CO\textsubscript{2} sequestered so far \link{https://patents.google.com/patent/US20240020775A1}{(patent)}. Integrates ML inferences, statistical reports, and subject matter expertise to identify missing/erroneous data and patch it with scientifically-defensible synthetic data. Designed and tested in collaboration with science and policy teams.
+      \item Built tools for satellite imagery visualization and analysis, including field boundary detection \link{https://patents.google.com/patent/US20220180526A1}{(patent)} and an on-demand image tiling service for interactive visualization of the latest 20m/pixel resolution imagery in Indigo’s web applications with a 100ms response time \link{https://patents.google.com/patent/US20230092057A1}{(patent)}.
     \end{cvitems}
     }
 
@@ -93,7 +97,7 @@
     {June 2018 - Present}
     {
     \begin{cvitems}
-      \item Built an MVP navigation webapp that optimizes for comfortable outdoor travel by simulating sunlight and shade along potential routes from dense LiDAR points and the OpenStreetMap graph
+      \item Built an MVP \link{https://www.allnans.com/jekyll/update/2018/08/07/introducing-parasol.html}{navigation app} that optimizes for comfortable outdoor travel in sun or shade by simulating sunlight along potential routes from dense LiDAR points and the OpenStreetMap graph
     \end{cvitems}
     }
 
@@ -104,7 +108,7 @@
     {June 2016 - May 2018}
     {
       \begin{cvitems}
-        \item Created ML-based analytical tools to address a wide range of Department of Defense needs, including adaptive decision support systems, data exploration via multi-level graphs, and gaming artificial intelligence
+        \item Created ML-based analytical tools to address a wide range of Department of Defense needs, including adaptive decision support systems, data exploration via multi-level graphs, and AI for interactive training games
       \end{cvitems}
     }
 
@@ -115,7 +119,7 @@
     {Sept. 2014 - June 2016}
     {
       \begin{cvitems}
-        \item {Consulted with BU faculty and students to design, optimize, and parallelize research software for HPC clusters} 
+        \item {Consulted with faculty and students to optimize and parallelize research software for an \link{https://www.bu.edu/tech/support/research/computing-resources/scc}{18k core computing cluster}} 
       \end{cvitems}
     }
 
@@ -128,11 +132,14 @@
       \begin{cvitems}
         \item {Designed and built a distributed numerical model to simulate erosion by rivers and glaciers}
         \item {Created a method for reconstructing past topography by decomposing and scaling modern topographic features}
-        \item {Built an analog model of mountain formation and software for measuring velocity fields from experiment imagery}
+        \item {Built a physical model of mountain formation and software for measuring velocity fields from experiment imagery}
       \end{cvitems} 
     }
 
 \end{cventries}
+
+% cludge to force things onto this page
+\vspace{-1em}
 
 \cvsection{Education}
 \begin{cventries}
