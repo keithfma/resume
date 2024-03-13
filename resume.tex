@@ -1,28 +1,7 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 \documentclass[11pt, a4paper]{awesome-cv}
-\fontdir[fonts/] % override a directory location for fonts(default: 'fonts/')
-% \newcommand*{\sectiondir}{resume/} % Configure a directory location for sections
-
-%%% Override color
-% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
-%                 awesome-nephritis, awesome-concrete, awesome-darknight
-
-%% Color for highlight
-% Define your custom color if you don't like awesome colors
-\colorlet{awesome}{awesome-red}
-%\definecolor{awesome}{HTML}{CA63A8}
-
-%% Colors for text
-%\definecolor{darktext}{HTML}{414141}
-%\definecolor{text}{HTML}{414141}
-%\definecolor{graytext}{HTML}{414141}
-%\definecolor{lighttext}{HTML}{414141}
-
-%%% Override a separator for social informations in header(default: ' | ')
-%\headersocialsep[\quad\textbar\quad]
-
-%\usepackage{import} % Needed to divide into several files
+\fontdir[fonts/] 
 
 
 % Header --------------------------------------------------------------------------------------------
@@ -37,11 +16,11 @@
 \enskip\textbar\enskip
 \headeraddressstyle{610-389-1406}
 \enskip\textbar\enskip
-\headeraddressstyle{Hanover, NH}
-\enskip\textbar\enskip
 \headeraddressstyle{\href{http://github.com/keithfma}{github.com/keithfma}}
 \enskip\textbar\enskip
 \headeraddressstyle{\href{http://linkedin.com/in/keithfma}{linkedin.com/in/keithfma}}
+\enskip\textbar\enskip
+\headeraddressstyle{\href{https://www.allnans.com/}{allnans.com}}
 
 \descriptionstyle{Software engineer with 10 years experience translating cutting-edge research into practical software and a strong background in science and ML. Looking to build tools that make hard tasks easy and the world a better place.}
 
@@ -52,26 +31,28 @@
 
 \cvsection{Skills}
 \begin{cvskills}
-\cvskill{Languages}{Python, Javascript,C, Fortran, Shell, SQL, MATLAB}
-\cvskill{Tools}{AWS, Airflow, PostGIS, Docker, CircleCI, GDAL/OGR, scipy, SQLAlchemy, celery, flask}
+\cvskill{Languages}{Python, Javascript, SQL, Shell, C, Fortran, MATLAB, R}
+\cvskill{Tools}{AWS, Airflow, Docker, Postgres/PostGIS, SQLAlchemy, Alembic, pytest, CircleCI, Celery, Flask}
+\cvskill{Science}{SciPy/NumPy, pandas/geopandas, GDAL/OGR}
+
 \end{cvskills}
 
 \cvsection{Experience}
 \begin{cventries}
 
   \cventrydouble
-    {Indigo Ag}  % org
-    {Boston, MA}  % location 
-    {Staff Software Engineer}  % most recent title
-    {March 2023 - Present}  % most recent dates
+    {Indigo Ag}
+    {Boston, MA}
+    {Staff Software Engineer}
+    {March 2023 - Present}
     {
     \begin{cvitems}
-      \item Led engineering for life cycle analysis library that applies input-output modeling to estimate cash crop CO\textsubscript{2} emissions from farmer actions and materials used. Includes a novel method for preprocessing model uncertainty that is currently in the patent application process.
+      \item Led engineering for life cycle analysis Python library that estimates CO\textsubscript{2} emissions for cash crops via input-output modeling. Includes a novel method for preprocessing model uncertainty that is currently in the patent application process.
       \item Improved team performance and built internal alignment by mentoring junior engineers, sharing knowledge with peers, and collaborating with science and product teams on requirements, milestones, and prioritization.
     \end{cvitems}
     }
-    {Senior Software Engineer}  % previous title
-    {Jan. 2019 - March 2023}  % previous title dates
+    {Senior Software Engineer}
+    {Jan. 2019 - March 2023}
     {
     \begin{cvitems}
       \item Developed data remediation service for a system that estimates soil organic carbon over time for >10k fields in the US, leading to >130k tons CO\textsubscript{2} sequestered so far \link{https://patents.google.com/patent/US20240020775A1}{(patent)}. Integrates ML inferences, statistical reports, and subject matter expertise to identify missing/erroneous data and patch it with scientifically-defensible synthetic data. Designed and tested in collaboration with science and policy teams.
@@ -119,7 +100,7 @@
     {Sept. 2014 - June 2016}
     {
       \begin{cvitems}
-        \item {Consulted with faculty and students to optimize and parallelize research software for an \link{https://www.bu.edu/tech/support/research/computing-resources/scc}{18k core computing cluster}} 
+        \item {Consulted with faculty and students to optimize and parallelize research software for an >18k core computing cluster} 
       \end{cvitems}
     }
 
@@ -132,7 +113,6 @@
       \begin{cvitems}
         \item {Designed and built a distributed numerical model to simulate erosion by rivers and glaciers}
         \item {Created a method for reconstructing past topography by decomposing and scaling modern topographic features}
-        \item {Built a physical model of mountain formation and software for measuring velocity fields from experiment imagery}
       \end{cvitems} 
     }
 
