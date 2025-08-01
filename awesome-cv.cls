@@ -111,7 +111,7 @@
 % NOTE: these are the original margins
 % \geometry{left=2.5cm, top=1.5cm, right=2.5cm, bottom=2.0cm, footskip=.5cm}
 % NOTE: margins modified by Keith Ma
-\geometry{left=2.5cm, top=1.3cm, right=2.5cm, bottom=1.0cm, footskip=.5cm}
+\geometry{left=2.5cm, top=2.5cm, right=2.5cm, bottom=2.5cm, footskip=.5cm}
 
 %% Header & Footer
 % Set offset to each header and offset
@@ -533,11 +533,11 @@
 % Define a section for CV
 % Usage: \cvsection{<section-title>}
 \newcommand{\cvsection}[1]{
-  \par\addvspace{1.0ex}
+  \par\addvspace{2.0ex}
   \phantomsection{}
   \sectionstyle{#1}
   \color{gray}\vhrulefill{0.9pt}
-  \par\nobreak\addvspace{1ex}
+  \par\nobreak\addvspace{1.0ex}
 }
 
 % Define a subsection for CV
@@ -557,7 +557,7 @@
 % Usage: \cventry{<position>}{<organization>}{<location>}{<date>}{<description>}
 \newcommand*{\cventry}[5]{
   \setlength\tabcolsep{0pt}
-  \setlength{\extrarowheight}{0pt}
+  \setlength{\extrarowheight}{3pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{12.5cm} R{4.0cm}}
     \ifempty{#2#3}
       {\entrypositionstyle{#1} & \entrydatestyle{#4} \\}
@@ -571,9 +571,9 @@
 % Usage: \cventry{<position>}{<organization>}{<location>}{<date>}{<description>}
 % NOTE: this is *not* part of the awesome-cv distribution, but rather a custom add-on by Keith Ma
 \newcommand*{\cventrytight}[5]{
-  \vspace{-1.0mm}  % NOTE: added to reduce space between sections
+  % \vspace{-1.0mm}  % NOTE: added to reduce space between sections
   \setlength\tabcolsep{0pt}
-  \setlength{\extrarowheight}{0pt}
+  \setlength{\extrarowheight}{3pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{12.5cm} R{4.0cm}}
     \ifempty{#2#3}
       {\entrypositionstyle{#1} & \entrydatestyle{#4} \\}
@@ -588,9 +588,9 @@
 % Usage: \cventrydouble{<organization>}{<location>}{<position1>}{<date1>}{description1}{<position2>}{<date2>}{<description>}
 % NOTE: this is *not* part of the awesome-cv distribution, but rather a custom add-on by Keith Ma
 \newcommand*{\cventrydouble}[8]{
-  \vspace{-1.0mm}  % NOTE: added to reduce space between sections
+  % \vspace{-1.0mm}  % NOTE: added to reduce space between sections
   \setlength\tabcolsep{0pt}
-  \setlength{\extrarowheight}{0pt}
+  \setlength{\extrarowheight}{5pt}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{12.5cm} R{4.0cm}}
       \entrytitlestyle{#1} & \entrylocationstyle{#2} \\
       \entrypositionstyle{#3} & \entrydatestyle{#4} \\
