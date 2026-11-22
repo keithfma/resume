@@ -22,7 +22,7 @@
 \enskip\textbar\enskip
 \headeraddressstyle{\href{https://www.allnans.com/}{allnans.com}}
 
-\descriptionstyle{Software engineer with 10 years experience translating cutting-edge research into practical software and a strong background in science and ML. Looking to build tools that make hard tasks easy and the world a better place.}
+\descriptionstyle{Engineering leader and software engineer with 12 years of experience translating cutting-edge research into practical software systems that make hard tasks easy and the world a better place. I bring a long-standing interest and deep experience in earth science, AI/ML, and engineering practice, most recently building AI agents and foundation models to understand, predict, and simulate the Earth's surface.}
 
 
 \end{center}
@@ -31,23 +31,36 @@
 
 \cvsection{Skills}
 \begin{cvskills}
-\cvskill{Languages}{Python, Javascript, SQL, Shell, C, Fortran, MATLAB, R}
-\cvskill{Tools}{AWS, Airflow, Docker, Postgres/PostGIS, SQLAlchemy, Alembic, pytest, CircleCI, Celery, Flask}
-\cvskill{Science}{SciPy/NumPy, pandas/geopandas, GDAL/OGR}
+\cvskill{Languages}{Python, SQL, Shell, Javascript, C, Fortran, MATLAB, R}
+\cvskill{AI}{LLM agents (Anthropic and OpenAI APIs, Agno, MCP, Agent Skills), PyTorch/Lightning, Claude Code}
+\cvskill{Tools}{AWS, Terraform, Docker, Postgres/PostGIS, SQLAlchemy, Alembic, pytest, GitHub Actions, Datadog}
+\cvskill{Geospatial}{GDAL/OGR, STAC, geopandas, SciPy/NumPy, pandas, Polars, Ray}
 
 \end{cvskills}
 
 \cvsection{Experience}
 \begin{cventries}
 
-  \cventrytight
-    {Data Engineer}
+  \cventrydouble
     {hum.ai}
-    {Waterloo, ON}
-    {Nov. 2024 - Present}
+    {San Francisco, CA}
+    {Chief Technology Officer}
+    {May 2026 - Present}
     {
     \begin{cvitems}
-      \item Design and build geospatial data processing pipelines for training AI models at scale, including >100TB of public and private satellite imagery and a wide variety of anciallary data sources.
+      \item Lead a team of six engineers and researchers building hum.ai's Earth Agent, an LLM agent that answers geospatial questions by finding data, running analyses, and returning maps and reports. Set the technical roadmap with company leadership and led the agent to beta readiness, including performance optimization, guardrails, and monitoring.
+      \item Manage the team building the Hum World Model, a large-scale foundation model for predicting and simulating the Earth's surface. Our model integrates an unprecedented range of observations (optical imagery, radar, lidar, gravimetry, weather) in a learned state that captures dynamical processes over time. Keep the team coordinated and unblocked, make its progress legible to the rest of the company, and lead hiring to grow the team.
+      \item Built a collaborative, healthy team through a period of intense and ongoing change in how software is made. Mentor engineers and researchers through regular 1:1s and performance reviews, and run the team's operating rhythm: cycle planning, retrospectives, design reviews, and the agendas for regular in-person onsites.
+      \item Introduced agentic engineering practices that counter siloed solo work: engineers brainstorm together and review designs and plans rather than code, pairing the velocity of our agents with the creativity and experience of our team.
+    \end{cvitems}
+    }
+    {Data Engineer}
+    {Nov. 2024 - May 2026}
+    {
+    \begin{cvitems}
+      \item Designed and built the Earth Agent's skills library, which packages geospatial expertise as tested scripts with JSON Schema contracts that the agent discovers and loads on demand. Now 28 skills, from zonal statistics to lidar visualization.
+      \item Co-developed the Earth Agent's data library, a catalog of $\sim$1,400 public datasets searchable by space, time, and subject, including its search interface, semantic index, and tagging. Easily extensible: new datasets can be added quickly and cheaply by an autonomous agent.
+      \item Designed and built the data platform for training and fine-tuning earth observation foundation models: processing pipelines for >100TB of public and private satellite imagery and a wide variety of ancillary data, a production STAC API for search across catalogs, and the training data formats.
     \end{cvitems}
     }
 
@@ -86,7 +99,7 @@
     {Data Science Fellow}
     {Insight Data Science}
     {Boston, MA}
-    {June 2018 - Present}
+    {June 2018 - Aug. 2018}
     {
     \begin{cvitems}
       \item Built an MVP \link{https://www.allnans.com/jekyll/update/2018/08/07/introducing-parasol.html}{navigation app} that optimizes for comfortable outdoor travel in sun or shade by simulating sunlight along potential routes from dense LiDAR points and the OpenStreetMap graph
@@ -124,6 +137,7 @@
       \begin{cvitems}
         \item {Designed and built a distributed numerical model to simulate erosion by rivers and glaciers}
         \item {Created a method for reconstructing past topography by decomposing and scaling modern topographic features}
+        \item {Built an analog model of mountain formation and software for measuring velocity fields from experiment imagery}
       \end{cvitems} 
     }
 
